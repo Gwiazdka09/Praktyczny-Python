@@ -8,9 +8,9 @@ if len(sys.argv) != 2:
 path = sys.argv[1]
 
 if not os.path.exists(path):
-    sys.exit(f"❌ Ścieżka '{path}' nie istnieje.")
+    sys.exit(f"Ścieżka '{path}' nie istnieje.")
 if not os.path.isdir(path):
-    sys.exit(f"❌ Ścieżka '{path}' nie jest katalogiem.")
+    sys.exit(f"Ścieżka '{path}' nie jest katalogiem.")
 
 # Wariant A - os.walk
 def list_os_walk(path):

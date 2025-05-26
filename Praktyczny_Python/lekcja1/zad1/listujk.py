@@ -11,11 +11,11 @@ path = sys.argv[1]  # Pobieramy ścieżkę z argumentu
 
 # Sprawdzamy, czy podana ścieżka istnieje
 if not os.path.exists(path):
-    sys.exit(f"❌ Ścieżka '{path}' nie istnieje.")
+    sys.exit(f"Ścieżka '{path}' nie istnieje.")
 
 # Sprawdzamy, czy to faktycznie katalog
 if not os.path.isdir(path):
-    sys.exit(f"❌ Ścieżka '{path}' nie jest katalogiem.")
+    sys.exit(f"Ścieżka '{path}' nie jest katalogiem.")
 
 # === Wariant A ===
 # Listowanie plików i folderów rekurencyjnie przy pomocy os.walk
